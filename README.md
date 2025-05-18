@@ -1,3 +1,6 @@
+Absolutely! Here’s your README with emojis added for a friendlier, more engaging look:
+
+````markdown
 # 📝 Flutter Todo App
 
 A simple Flutter Todo app featuring task creation, completion tracking, and persistent local storage using Hive. 🚀
@@ -16,8 +19,10 @@ A simple Flutter Todo app featuring task creation, completion tracking, and pers
 ---
 
 ## 📸 Screenshots
+![Screenshot_20250519_001446](https://github.com/user-attachments/assets/2766f6f1-55c8-41d8-9737-4bf712736e7f)
+![Screenshot_20250519_001507](https://github.com/user-attachments/assets/9217c105-2e7e-4045-91d7-7ce8e4de3062)
+![Screenshot_20250519_001446](https://github.com/user-attachments/assets/0d16bba3-d23e-4d12-bdff-c4564fae5c43)
 
-*Add app screenshots here* 📱
 
 ---
 
@@ -36,79 +41,76 @@ A simple Flutter Todo app featuring task creation, completion tracking, and pers
 ```bash
 git clone https://github.com/nathanyakob19/Todoapp-.git
 cd Todoapp-
-Fetch dependencies:
+````
 
-bash
-Copy
-Edit
+2. Fetch dependencies:
+
+```bash
 flutter pub get
-Run the app:
+```
 
-bash
-Copy
-Edit
+3. Run the app:
+
+```bash
 flutter run
-🧩 Code Overview
-Main Components
-home.dart
+```
 
-The main screen UI
+---
 
-Handles displaying the todo list, adding tasks, toggling completion, and deleting tasks
+## 🧩 Code Overview
 
-database.dart
+### Main Components
 
-Handles Hive database initialization and CRUD operations
+* **home.dart**
 
-Stores the todo list persistently under the key "TODOLIST"
+  * The main screen UI
+  * Handles displaying the todo list, adding tasks, toggling completion, and deleting tasks
 
-dialog.dart
+* **database.dart**
 
-Custom dialog box with a TextField and Save/Cancel buttons
+  * Handles Hive database initialization and CRUD operations
+  * Stores the todo list persistently under the key `"TODOLIST"`
 
-Used for adding new tasks
+* **dialog.dart**
 
-button.dart
+  * Custom dialog box with a `TextField` and Save/Cancel buttons
+  * Used for adding new tasks
 
-Custom reusable button widget with consistent styling
+* **button.dart**
 
-🔍 How It Works
-The app initializes Hive and loads saved tasks on startup (home.dart).
+  * Custom reusable button widget with consistent styling
 
-When adding a new task, a dialog box (dialog.dart) appears with a text input and buttons.
+### 🔍 How It Works
 
-Tasks are stored as a list of [taskName, isCompleted] pairs in Hive.
+* The app initializes Hive and loads saved tasks on startup (`home.dart`).
+* When adding a new task, a dialog box (`dialog.dart`) appears with a text input and buttons.
+* Tasks are stored as a list of `[taskName, isCompleted]` pairs in Hive.
+* Checking/unchecking a task updates its completion status and saves to the database.
+* Deleting a task removes it from the list and updates the database.
 
-Checking/unchecking a task updates its completion status and saves to the database.
+---
 
-Deleting a task removes it from the list and updates the database.
+## 📦 Dependencies and Setup
 
-📦 Dependencies and Setup
 This Flutter Todo app uses the following key packages:
 
-🧰 flutter: The Flutter SDK for app development
+* 🧰 **flutter**: The Flutter SDK for app development
+* 🗄️ **hive**: Lightweight and fast key-value database for local storage
+* 🐦 **hive\_flutter**: Flutter extensions for Hive initialization and integration
+* 🔄 **flutter\_slidable**: Swipeable list items for easy task deletion
+* 🌐 **universal\_html**: Utilities for HTML (used if targeting web or specific features)
+* 🍎 **cupertino\_icons**: iOS style icons
 
-🗄️ hive: Lightweight and fast key-value database for local storage
+### 👩‍💻 Developer dependencies:
 
-🐦 hive_flutter: Flutter extensions for Hive initialization and integration
+* 🔧 **hive\_generator** and **build\_runner**: For generating Hive type adapters (optional, needed only if you use Hive custom types)
+* 🧹 **flutter\_lints**: Provides recommended linting rules for clean, consistent code
 
-🔄 flutter_slidable: Swipeable list items for easy task deletion
+### ⚙️ Adding dependencies
 
-🌐 universal_html: Utilities for HTML (used if targeting web or specific features)
+Ensure your `pubspec.yaml` includes:
 
-🍎 cupertino_icons: iOS style icons
-
-👩‍💻 Developer dependencies:
-🔧 hive_generator and build_runner: For generating Hive type adapters (optional, needed only if you use Hive custom types)
-
-🧹 flutter_lints: Provides recommended linting rules for clean, consistent code
-
-⚙️ Adding dependencies
-Ensure your pubspec.yaml includes:
-
-yaml
-Copy
-Edit
+```yaml
 dependencies:
   flutter:
     sdk: flutter
@@ -124,16 +126,19 @@ dev_dependencies:
   hive_generator: ^1.1.3
   build_runner: ^2.1.11
   flutter_lints: ^5.0.0
-After editing pubspec.yaml, run:
+```
 
-bash
-Copy
-Edit
+After editing `pubspec.yaml`, run:
+
+```bash
 flutter pub get
-🗂️ Folder Structure
-bash
-Copy
-Edit
+```
+
+---
+
+## 🗂️ Folder Structure
+
+```
 lib/
 ├── data/
 │   └── database.dart        # Hive database handler
@@ -141,14 +146,20 @@ lib/
 │   ├── dialog.dart          # Add task dialog widget
 │   └── button.dart          # Custom button widget
 └── home.dart                # Main app UI and logic
-🤝 Contribution
+```
+
+---
+
+## 🤝 Contribution
+
 Feel free to fork and submit pull requests or raise issues for improvements! 🙌
 
-📄 License
+---
+
+## 📄 License
+
 MIT License
 
-pgsql
-Copy
-Edit
+---
 
-If you want, I can also prepare this as a markdown file (`README.md`) ready to upload to your repo
+`
